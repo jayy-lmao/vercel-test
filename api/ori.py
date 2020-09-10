@@ -6,5 +6,5 @@ class handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
         self.end_headers()
-        self.wfile.write({"message": "Happy Birthday my beautiful oddboi"})
+        self.wfile.write("Happy Birthday my beautiful oddboi".encode())
         return
